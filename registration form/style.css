@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat+Alternates&family=Poppins:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width:100vw;
+    height:100vh;
+    background-color: rgb(20, 171, 218);
+    display:grid;
+    place-items:center;
+
+    
+}
+
+.container{
+    background-color:whitesmoke;
+    width:400px;
+    height:500px;
+    align-items: center;
+    
+    
+}
+.container h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100%;
+    padding:10px;
+
+}
+.form-group{
+    
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    color:rgb(44, 43, 42);
+    font-weight:600;
+
+}
+.form-group label{
+    display: block;
+    margin:0 45px;
+    color:rgb(82, 82, 133);
+}
+.form-group p{
+    margin:0 45px;
+     padding:3px;
+     font-size: 11px;
+    height: 5px;
+    visibility: hidden;
+    text-shadow: 2px;
+   
+}
+.form-group.error p{
+    color: rgb(156, 23, 23);
+    visibility: visible;
+}
+.form-group.error input {
+    border-color: rgb(218, 39, 39);
+}
+.form-group.success input{
+   border-color: rgb(34, 104, 13);
+}
+
+
+.form-group input{
+    width:300px;
+    padding:4px;
+    margin:0 45px;
+    border-style:inherit;
+    
+    
+}
+.container button{
+    width:300px;
+    padding:5px;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: #5fa2da;
+    margin:0 45px;
+}

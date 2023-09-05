@@ -1,0 +1,254 @@
+body{
+    margin:0;
+   
+    font-family: 'Lato', sans-serif;
+}
+
+nav{
+    background-color: black;
+    padding:20px 50px;
+    color:white;
+}
+
+.navtop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: rgb(166, 166, 167);
+    padding: 5px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.searchItem{
+   border:none;
+   background-color: transparent;
+   font-size: 16px;
+}
+.searchItem::placeholder{
+   color:light gray;
+}
+
+.limitedoffer{
+    font-size: 20px;
+    border-bottom:2px solid green;
+    cursor :pointer;
+}
+.navbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuItem{
+    margin-right:50px;
+    color:light gray;
+    cursor: pointer;
+    font-weight: 400;padding-top: 40px;
+
+}
+.slider{
+background-image: url(https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+overflow: hidden;
+
+}
+.sliderwrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+
+}
+.sliderImg{
+    z-index: 1;
+}
+.slideitems{
+   width:100vw;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   position: relative;
+}
+
+.sliderTitle{
+   color:rgb(250, 249, 249);
+   font-size: 60px ;
+   position: absolute;
+   text-align: center;
+   top:10%;
+   right:15%;
+   z-index: 1;
+
+   
+}
+.slidebg{
+    width:750px;
+    height:750px;
+    border-radius: 50%;
+    position:absolute;
+    
+ 
+}
+.sliderprice{
+    position:absolute;
+    top:10%;
+    left:10%;
+    color:rgb(255, 254, 254);
+     padding:2px;
+    font-size:60px;
+    border:1px solid gray;
+    font-weight: 300;
+}
+.slidebtn{
+  
+  background-color: rgb(8, 8, 8);
+  font-size: 40px;
+  color:rgb(250, 247, 247);
+  font-weight: 400;
+  border-color:3px white;
+  position: absolute;
+  right:15%;
+  top:50%;
+  z-index:1;
+}
+.slidebtn:hover{
+  background-color: white;
+  color:black;
+}
+
+.slideitems:nth-child(1) .slidebg{
+    background-color: #369e62;
+   
+}
+.slideitems:nth-child(2) .slidebg{
+    background-color: rebeccapurple;
+}
+.slideitems:nth-child(3) .slidebg{
+    background-color:teal;
+}
+.slideitems:nth-child(4) .slidebg{
+    background-color:cornflowerblue;
+}
+.slideitems:nth-child(5) .slidebg{
+    background-color: rgb(124,115,80);
+}
+
+.slideitems:nth-child(1) .sliderprice{
+    color: #369e62;
+}
+.slideitems:nth-child(2) .sliderprice{
+    color: rebeccapurple;
+}
+.slideitems:nth-child(3) .sliderprice{
+    color: teal;
+}
+.slideitems:nth-child(4) .sliderprice{
+    color:cornflowerblue;
+}
+.slideitems:nth-child(5) .sliderprice{
+    color: rgb(124,115,80);
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px;
+    text-align: center;
+   
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.featureIcon{
+   width:50px;
+   height:50px;
+
+}
+.featureTitle{
+    color:black;
+    font-weight: 600;
+    margin:20px;
+    font-size: 20px;
+}
+.featureDesc{
+    color:gray;
+    width:50%;
+    height:100px;
+}
+.product{
+    height:100vh;
+    background-color: whitesmoke;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+}
+.productImg{
+    width:50%;
+}
+.productdetails{
+    position:absolute;
+    top:10%;
+    right:0;
+    width:40%;
+    padding:50px;
+    
+}
+.productTitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+.productprice{
+   
+    font-size:25px;
+   
+}
+.productDesc{
+
+    color:gray;
+    font-size:20px;
+    margin-top:10px;
+}
+.color ,.sizes{
+    
+    display: flex;
+    
+   
+}
+.colors{
+   width:32px;
+   height:32px;
+   border-radius:20%;
+   background-color: black;
+   cursor: pointer;
+   margin-right: 10px;
+   margin-top:5px;
+}
+.colors:nth-last-child(1){
+    background-color:darkblue;
+}
+.size{
+   
+    border:1px solid gray;
+    padding:15px 20px;
+    margin-right:15px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.productbtn{
+    padding:10px 20px;
+    float:right;
+    margin:40px;
+    cursor: pointer;
+    color:white;
+    background-color: black;
+    border: 1px solid black;
+    font-weight: 700;
+    font-size:15px;
+}
+.productbtn:hover{
+    color:black;
+    background-color: rgb(255, 255, 255);
+}
